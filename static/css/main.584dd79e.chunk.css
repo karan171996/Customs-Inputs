@@ -1,0 +1,60 @@
+button {
+  cursor:pointer;
+  border:none;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding:10px;
+  text-align: center;
+}
+.sm {
+      min-width: 73px;
+      min-height: 32px;
+}
+.md {
+    min-width: 81px;
+    min-height: 36px;
+}
+.lg {
+  min-width: 93px;
+  min-height: 42px;
+  }
+
+.default {
+  color:#3F3F3F;
+  background: #E0E0E0;
+  border-radius: 6px;
+}
+.default:focus,
+.default:hover {
+  background: #AEAEAE;
+}
+
+.outline {
+border: 1px solid #3D5AFE;
+border-radius: 6px;
+color:#3D5AFE;
+font-weight: 500;
+font-size: 14px;
+background:#fff;
+}
+
+.outline:focus,
+.outline:hover {
+  background:rgba(41, 98, 255, 0.1);
+}
+
+.text {
+  border:none;
+  color:#3D5AFE;
+  font-weight: 500;
+  font-size: 14px;
+  background:#fff;
+}
+
+.text:focus,
+.text:hover {
+  border-radius: 6px;
+  border: 1px solid #3D5AFE;
+  background:rgba(41, 98, 255, 0.1);
+}
+
+/*# sourceMappingURL=main.584dd79e.chunk.css.map*/
