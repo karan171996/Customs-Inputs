@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="http://karan171996.github.io/Customs-Inputs/">
+    <a href="https://karan171996.github.io/Customs-Inputs/?path=/story/button--default-button">
       Demo
     </a>
     <span> | </span>
