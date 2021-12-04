@@ -4,7 +4,21 @@ button {
   font-family: 'Noto Sans JP', sans-serif;
   padding:10px;
   text-align: center;
+  font-weight: 500;
+  font-size: 14px;
 }
+.text-section {
+  display:flex;
+  align-items: center;
+  grid-gap:10px;
+  gap:10px;
+}
+button:disabled,
+button[disabled]{
+color: #9E9E9E;
+pointer-events:none;
+}
+
 .sm {
       min-width: 73px;
       min-height: 32px;
@@ -32,8 +46,6 @@ button {
 border: 1px solid #3D5AFE;
 border-radius: 6px;
 color:#3D5AFE;
-font-weight: 500;
-font-size: 14px;
 background:#fff;
 }
 
@@ -45,8 +57,6 @@ background:#fff;
 .text {
   border:none;
   color:#3D5AFE;
-  font-weight: 500;
-  font-size: 14px;
   background:#fff;
 }
 
@@ -57,4 +67,37 @@ background:#fff;
   background:rgba(41, 98, 255, 0.1);
 }
 
-/*# sourceMappingURL=main.584dd79e.chunk.css.map*/
+.primary {
+  border-radius: 6px;
+  background: #2962FF;
+  color:#fff;
+}
+
+.primary:focus,
+.primary:hover {
+  background: #0039CB;
+}
+.secondary {
+  border-radius: 6px;
+  background: #455A64;
+  color:#fff;
+}
+.secondary:focus,
+.secondary:hover {
+background: #1C313A;
+}
+
+
+.danger {
+  background: #D32F2F;
+  border-radius: 6px;
+  color:#fff;
+}
+
+.danger:focus,
+.danger:hover {
+  background: #9A0007;
+}
+
+
+/*# sourceMappingURL=main.7f30780b.chunk.css.map*/
