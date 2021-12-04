@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 export const Button = ({
   title,
@@ -8,16 +9,23 @@ export const Button = ({
   boxShadow,
   size,
   backgroundColor,
+  disabledButton,
+  iconPosition,
 }) => {
+  console.log("disabledButton", disabledButton);
   return (
     <button
+      disabled={disabledButton}
       style={{
         boxShadow: boxShadow ? "0px 2px 3px rgba(51, 51, 51, 0.2)" : "none",
-        backgroundColor,
       }}
-      className={`${varient} ${size}`}
+      className={`${varient} ${size} ${backgroundColor}`}
     >
-      {title}
+      <div className="text-section">
+        {iconPosition === "left" && <AiOutlineShoppingCart />}
+        {title}
+        {iconPosition === "right" && <AiOutlineShoppingCart />}
+      </div>
     </button>
   );
 };
@@ -28,4 +36,6 @@ Button.propTypes = {
   boxShadow: PropTypes.bool,
   size: PropTypes.string,
   backgroundColor: PropTypes.string,
+  disabledButton: PropTypes.bool,
+  iconPosition: PropTypes.string,
 };

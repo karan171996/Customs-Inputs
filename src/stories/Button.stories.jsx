@@ -12,25 +12,56 @@ export default {
       options: ["default", "primary", "secondary", "danger"],
       control: { type: "radio" },
     },
-    varient: {
-      options: ["default", "outline", "text"],
-      control: { type: "select" },
-    },
     boxShadow: { control: "boolean" },
     title: { control: "text" },
     size: {
       options: ["sm", "md", "lg"],
       control: { type: "select" },
     },
+    disabledButton: { control: "boolean" },
+    iconPosition: {
+      options: ["none", "left", "right"],
+      control: { type: "radio" },
+    },
   },
 };
 
 const Template = (args) => <Button {...args} />;
-export const ButtonTemplate = Template.bind({});
-ButtonTemplate.args = {
+
+export const DefaultButton = Template.bind({});
+DefaultButton.args = {
   title: "Default",
   varient: "default",
-  boxShadow: true,
+  disabledButton: false,
   size: "md",
-  backgroundColor: "#E0E0E0",
+  boxShadow: true,
+  iconPosition: "none",
+};
+DefaultButton.parameters = {
+  controls: {
+    exclude: ["varient"],
+  },
+};
+
+export const OutlineButton = Template.bind({});
+OutlineButton.args = {
+  title: "Default",
+  varient: "outline",
+  iconPosition: "none",
+};
+OutlineButton.parameters = {
+  controls: {
+    exclude: ["varient", "backgroundColor"],
+  },
+};
+
+export const TextButton = Template.bind({});
+TextButton.args = {
+  title: "Default",
+  varient: "text",
+};
+TextButton.parameters = {
+  controls: {
+    exclude: ["varient", "backgroundColor", "iconPosition"],
+  },
 };
