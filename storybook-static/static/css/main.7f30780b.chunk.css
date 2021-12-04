@@ -1,0 +1,103 @@
+button {
+  cursor:pointer;
+  border:none;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding:10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.text-section {
+  display:flex;
+  align-items: center;
+  grid-gap:10px;
+  gap:10px;
+}
+button:disabled,
+button[disabled]{
+color: #9E9E9E;
+pointer-events:none;
+}
+
+.sm {
+      min-width: 73px;
+      min-height: 32px;
+}
+.md {
+    min-width: 81px;
+    min-height: 36px;
+}
+.lg {
+  min-width: 93px;
+  min-height: 42px;
+  }
+
+.default {
+  color:#3F3F3F;
+  background: #E0E0E0;
+  border-radius: 6px;
+}
+.default:focus,
+.default:hover {
+  background: #AEAEAE;
+}
+
+.outline {
+border: 1px solid #3D5AFE;
+border-radius: 6px;
+color:#3D5AFE;
+background:#fff;
+}
+
+.outline:focus,
+.outline:hover {
+  background:rgba(41, 98, 255, 0.1);
+}
+
+.text {
+  border:none;
+  color:#3D5AFE;
+  background:#fff;
+}
+
+.text:focus,
+.text:hover {
+  border-radius: 6px;
+  border: 1px solid #3D5AFE;
+  background:rgba(41, 98, 255, 0.1);
+}
+
+.primary {
+  border-radius: 6px;
+  background: #2962FF;
+  color:#fff;
+}
+
+.primary:focus,
+.primary:hover {
+  background: #0039CB;
+}
+.secondary {
+  border-radius: 6px;
+  background: #455A64;
+  color:#fff;
+}
+.secondary:focus,
+.secondary:hover {
+background: #1C313A;
+}
+
+
+.danger {
+  background: #D32F2F;
+  border-radius: 6px;
+  color:#fff;
+}
+
+.danger:focus,
+.danger:hover {
+  background: #9A0007;
+}
+
+
+/*# sourceMappingURL=main.7f30780b.chunk.css.map*/
